@@ -42,10 +42,7 @@ def feed_animals(animals: list):
     """
     Alimenta uma lista de animais e retorna o total de comida consumida.
     """
-    total_food = 0
-    for animal in animals:
-        total_food += animal.feed()
-    return total_food
+    return sum(animal.feed() for animal in animals)
 
 
 # Bloco de execução principal para demonstração e verificação
